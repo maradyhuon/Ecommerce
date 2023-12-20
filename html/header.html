@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Header</title>
+    <style>
+      /* header */
+      .containers {
+        max-width: 1200px;
+        margin: auto;
+        margin-top: 30px;
+      }
+      .containers .hr {
+        margin: 20px 0;
+      }
+      .containers .header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+      }
+      .containers .header .left a {
+        text-decoration: none;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        font-weight: 700;
+        font-size: 25px;
+      }
+      .containers .header .center ul {
+        display: flex;
+        list-style: none;
+      }
+      .containers .header .center ul li {
+        margin: 0 10px;
+      }
+      .containers .header .center ul li a {
+        position: relative;
+        text-decoration: none;
+        letter-spacing: 1px;
+        font-weight: 600;
+        font-size: 18px;
+      }
+      .containers .header .center ul li a::before {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        width: 0;
+        height: 2.5px;
+        background-color: black;
+        transition: all 0.5s ease;
+      }
+      .containers .header .center ul li a:hover::before {
+        width: 100%;
+      }
+      .containers .header .right {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+      }
+      .containers .header .right .cart {
+        position: relative;
+      }
+      .containers .header .right .dot {
+        position: absolute;
+        left: 3px;
+        background: red;
+        padding: 3px 5px;
+        color: white;
+        border-radius: 100%;
+      }
+      .containers .header .right input[type="text"] {
+        width: 80px;
+        height: 25px;
+        padding: 12px 20px 12px 40px;
+        border-radius: 5px;
+        background-image: url("/images/head/icons8-search-25.png");
+        background-repeat: no-repeat;
+        background-position: left;
+        border: 0.6px solid gray;
+        float: right;
+        transition: all 0.5s ease;
+      }
+      .containers .header .right input[type="text"]:focus {
+        width: 100%;
+        outline: none;
+      }
+
+      .containers .header .right .menu {
+        display: none;
+      }
+      .containers .header .menu .menu-icon svg {
+        font-size: 30px;
+        cursor: pointer;
+      }
+      @media (max-width: 960px) {
+        .containers .header .center ul {
+          display: none;
+        }
+        .containers .header {
+          justify-content: space-between;
+        }
+        .containers .header .right {
+          margin: 0 20px;
+          display: flex;
+        }
+        .containers .header .right .menu {
+          display: block;
+          cursor: pointer;
+          border: none;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="containers">
+      <!-- header -->
+      <div class="header">
+        <div class="left">
+          <a href="#">Exclusive</a>
+        </div>
+        <div class="center">
+          <ul>
+            <li><a href="/index.html">Home</a></li>
+            <li><a href="/pages/contact.html">Contact</a></li>
+            <li><a href="/pages/about.html">About</a></li>
+            <li><a href="/pages/sign-in.html">Sign Up</a></li>
+          </ul>
+        </div>
+        <div class="right">
+          <form action="">
+            <input type="text" name="search" id="" placeholder="Search..." />
+          </form>
+          <!-- cart -->
+          <a href="/pages/check-out.html" class="cart"
+            ><svg
+              width="40px"
+              height="40px"
+              viewBox="0 0 24 24"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                opacity="0.15"
+                d="M4 7H20V18C20 19.1046 19.1046 20 18 20H6C4.89543 20 4 19.1046 4 18V7Z"
+                fill="#000000"
+              />
+              <path
+                d="M15 11C15 12.6569 13.6569 14 12 14C10.3431 14 9 12.6569 9 11M20 7L18 3H6L4 7M20 7H4M20 7V18C20 19.1046 19.1046 20 18 20H6C4.89543 20 4 19.1046 4 18V7"
+                stroke="#000000"
+                stroke-width="1.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+            <span class="dot">3</span>
+          </a>
+
+          <button class="menu">
+            <svg
+              width="30px"
+              height="30px"
+              viewBox="0 0 24 24"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M4 6H20M4 12H20M4 18H20"
+                stroke="#000000"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+          </button>
+        </div>
+      </div>
+      <hr style="margin: 30px 0" />
+    </div>
+
+    <!-- script -->
+    <script src="/pages/page.js"></script>
+  </body>
+</html>

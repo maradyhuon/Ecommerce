@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Details</title>
+    <link rel="stylesheet" href="/pages/page.css" />
+    <link rel="stylesheet" href="/css/style.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+  </head>
+  <body>
+    <div class="header"></div>
+    <div class="container">
+      <div class="details">
+        <div class="details-image">
+          <div class="details-left">
+            <div class="details-left-img">
+              <img
+                src="/images/product/1/computer/acer/acer.png"
+                alt=""
+                onclick="showImg(this.src)"
+              />
+            </div>
+            <div class="details-left-img">
+              <img
+                src="/images/product/1/computer/acer/details/0sj53qit.png"
+                alt=""
+                onclick="showImg(this.src)"
+              />
+            </div>
+            <div class="details-left-img">
+              <img
+                src="/images/product/1/computer/acer/details/owbs63gc.png"
+                alt=""
+                onclick="showImg(this.src)"
+              />
+            </div>
+            <div class="details-left-img">
+              <img
+                src="/images/product/1/computer/acer/details/voysvn1k.png"
+                alt=""
+                onclick="showImg(this.src)"
+              />
+            </div>
+          </div>
+          <div class="details-center">
+            <div class="details-center-img">
+              <img src="/images/product/1/computer/acer/acer.png" alt="" />
+            </div>
+          </div>
+        </div>
+        <div class="details-right">
+          <div class="details-right-top">
+            <p class="details-right-top-title">
+              ACER ASPIRE 5 A515-56-347N SLIM LAPTOP - 15.6" FULL HD
+            </p>
+            <div class="details-right-top-ratings">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star-half-alt"></i>
+            </div>
+            <div class="details-right-top-price">
+              <p class="details-right-top-price-after">$192</p>
+              <p class="details-right-top-price-before">$250</p>
+            </div>
+            <hr class="hr" />
+          </div>
+          <div class="details-right-center">
+            <div class="details-right-center-color">
+              <p class="details-right-center-color-title">Color:</p>
+              <label for=""
+                ><input type="checkbox" name="" value="Black" /> Black</label
+              ><label for=""
+                ><input type="checkbox" name="" value="Black" /> Gray</label
+              ><label for=""
+                ><input type="checkbox" name="" value="Black" /> White</label
+              >
+            </div>
+            <!-- amount -->
+            <div class="details-right-center-amount">
+              <div class="details-right-center-amount-mount">
+                <button
+                  class="details-right-center-amount-mount-minus"
+                  onclick="minus()"
+                >
+                  -
+                </button>
+                <input
+                  type="text"
+                  min="1"
+                  max="999"
+                  name=""
+                  id="amount"
+                  value="1"
+                />
+                <button
+                  class="details-right-center-amount-mount-plus"
+                  onclick="plus()"
+                >
+                  +
+                </button>
+              </div>
+              <div class="buy-fav">
+                <!-- buy button -->
+                <div class="details-right-center-amount-buy">
+                  <button class="details-right-center-amount-buy-btn">
+                    Buy Now
+                  </button>
+                </div>
+                <!-- favorite -->
+                <div class="details-right-center-amount-favorite">
+                  <a href="#"
+                    ><svg
+                      width="40px"
+                      height="40px"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
+                        d="M11.993 5.09691C11.0387 4.25883 9.78328 3.75 8.40796 3.75C5.42122 3.75 3 6.1497 3 9.10988C3 10.473 3.50639 11.7242 4.35199 12.67L12 20.25L19.4216 12.8944L19.641 12.6631C20.4866 11.7172 21 10.473 21 9.10988C21 6.1497 18.5788 3.75 15.592 3.75C14.2167 3.75 12.9613 4.25883 12.007 5.09692L12 5.08998L11.993 5.09691ZM12 7.09938L12.0549 7.14755L12.9079 6.30208L12.9968 6.22399C13.6868 5.61806 14.5932 5.25 15.592 5.25C17.763 5.25 19.5 6.99073 19.5 9.10988C19.5 10.0813 19.1385 10.9674 18.5363 11.6481L18.3492 11.8453L12 18.1381L5.44274 11.6391C4.85393 10.9658 4.5 10.0809 4.5 9.10988C4.5 6.99073 6.23699 5.25 8.40796 5.25C9.40675 5.25 10.3132 5.61806 11.0032 6.22398L11.0921 6.30203L11.9452 7.14752L12 7.09938Z"
+                        fill="#080341"
+                      />
+                    </svg>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="details-right-bottom">
+            <div class="details-right-bottom-delivery">
+              <div class="details-right-bottom-delivery-icon">
+                <svg
+                  width="40px"
+                  height="40px"
+                  viewBox="0 0 48 48"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <g id="Layer_2" data-name="Layer 2">
+                    <g id="invisible_box" data-name="invisible box">
+                      <rect width="48" height="48" fill="none" />
+                    </g>
+                    <g id="Health_Icons" data-name="Health Icons">
+                      <g>
+                        <path
+                          d="M37.7,11.1A3,3,0,0,0,35.4,10H34.2l.3-1.7A3.1,3.1,0,0,0,33.9,6a3.2,3.2,0,0,0-2.2-1H7.8a2,2,0,0,0,0,4H30.3l-4,22.9a6.8,6.8,0,0,0-1,2.1H20.7A7,7,0,0,0,7.3,34H6.2l.5-2.9a2,2,0,0,0-1.6-2.3,2,2,0,0,0-2.3,1.6L2,34.7A2.8,2.8,0,0,0,2.7,37a2.8,2.8,0,0,0,2.1,1H7.3a7,7,0,0,0,13.4,0h4.6a7,7,0,0,0,13.4,0h2a3.2,3.2,0,0,0,3.1-2.7L46,22.5ZM14,39a3,3,0,0,1-3-3,3,3,0,0,1,6,0A3,3,0,0,1,14,39ZM33.5,14h1.3l5.9,8H32.1ZM32,39a3,3,0,0,1-3-3,3,3,0,0,1,6,0A3,3,0,0,1,32,39Zm8-5H38.7A7,7,0,0,0,32,29H30.9l.5-3.1h9.9Z"
+                        />
+                        <path d="M4,15H14a2,2,0,0,0,0-4H4a2,2,0,0,0,0,4Z" />
+                        <path
+                          d="M15,19a2,2,0,0,0-2-2H5a2,2,0,0,0,0,4h8A2,2,0,0,0,15,19Z"
+                        />
+                        <path d="M6,23a2,2,0,0,0,0,4h6a2,2,0,0,0,0-4Z" />
+                      </g>
+                    </g>
+                  </g>
+                </svg>
+              </div>
+              <div class="details-right-bottom-delivery-txt">
+                <p class="details-right-bottom-delivery-txt-title">
+                  free delivery
+                </p>
+                <p class="details-right-bottom-delivery-txt-desc">
+                  enter your postal code for delivery availability
+                </p>
+              </div>
+            </div>
+            <!-- guarantee -->
+            <div class="details-right-bottom-guarantee">
+              <div class="details-right-bottom-guarantee-icon">
+                <svg
+                  width="40px"
+                  height="40px"
+                  viewBox="0 0 64 64"
+                  xmlns="http://www.w3.org/2000/svg"
+                  stroke-width="3"
+                  stroke="#000000"
+                  fill="none"
+                >
+                  <path
+                    d="M54.89,26.73A23.52,23.52,0,0,1,15.6,49"
+                    stroke-linecap="round"
+                  />
+                  <path
+                    d="M9,37.17a23.75,23.75,0,0,1-.53-5A23.51,23.51,0,0,1,48.3,15.2"
+                    stroke-linecap="round"
+                  />
+                  <polyline
+                    points="37.73 16.24 48.62 15.44 47.77 5.24"
+                    stroke-linecap="round"
+                  />
+                  <polyline
+                    points="25.91 47.76 15.03 48.56 15.88 58.76"
+                    stroke-linecap="round"
+                  />
+                </svg>
+              </div>
+              <div class="details-right-bottom-guarantee-txt">
+                <p class="details-right-bottom-guarantee-txt-title">
+                  free delivery
+                </p>
+                <p class="details-right-bottom-guarantee-txt-desc">
+                  enter your postal code for delivery availability
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <h1>related</h1>
+    </div>
+    <!-- related product -->
+    <div class="product"></div>
+    <!-- footer -->
+    <div class="footer"></div>
+    <!-- script -->
+    <script>
+      let Show = document.querySelector(".details-center-img img");
+      function showImg(pic) {
+        Show.src = pic;
+      }
+    </script>
+    <script src="/pages/page.js"></script>
+    <script src="/js/script.js"></script>
+  </body>
+</html>

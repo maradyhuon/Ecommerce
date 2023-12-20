@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact</title>
+    <style>
+      @media (max-width: 1200px) {
+        body {
+          margin: 0 2vw;
+        }
+      }
+      .contact {
+        display: flex;
+        max-width: 1200px;
+        margin: auto;
+        gap: 20px;
+      }
+      @media (max-width: 1024px) {
+        .contact {
+          display: flex;
+          flex-direction: column;
+        }
+      }
+      .contact .contact-left {
+        max-width: 300px;
+        box-shadow: 7px 0px 15px 11px rgba(193, 193, 193, 0.24);
+        padding: 10px;
+      }
+      @media (max-width: 1024px) {
+        .contact .contact-left {
+          max-width: 100%;
+        }
+      }
+      .contact .contact-left .contact-left-title {
+        display: flex;
+        align-items: center;
+        gap: 15px;
+      }
+      .contact .contact-left .contact-left-title .contact-left-title-icon {
+        background: #db4444;
+        padding: 5px;
+        border-radius: 5px;
+      }
+      .contact
+        .contact-left
+        .contact-left-title
+        .contact-left-title-icon
+        .contact-left-title-icon-call {
+        color: white;
+        font-size: 20px;
+      }
+      .contact .contact-left .contact-left-title .contact-left-title-text {
+        font-size: 20px;
+      }
+      .contact .contact-right {
+        max-width: 900px;
+        box-shadow: 7px 0px 15px 11px rgba(193, 193, 193, 0.24);
+        padding: 10px;
+        overflow: hidden;
+      }
+      @media (max-width: 1024px) {
+        .contact .contact-right {
+          max-width: 100%;
+        }
+      }
+      .contact .contact-right .contact-right-input {
+        margin-bottom: 15px;
+      }
+      .contact .contact-right .contact-right-input input[type="text"] {
+        height: 50px;
+        max-width: 300px;
+        width: 12vw;
+        background: rgb(235, 234, 234);
+        border-radius: 5px;
+        border: none;
+        margin: 10px;
+        padding: 0 20px;
+        font-size: 18px;
+        outline: none;
+      }
+      .contact .contact-right .contact-right-desc textarea {
+        width: 100%;
+        height: 14vw;
+        font-size: 20px;
+        padding: 20px;
+        outline: none;
+        border: none;
+        background: rgb(235, 234, 234);
+        border-radius: 5px;
+      }
+      .contact .contact-right .contact-right-desc .contact-right-desc-btn {
+        float: right;
+        margin: 10px 0;
+        background: #db4444;
+        color: white;
+        padding: 10px 25px;
+        border: none;
+        border-radius: 5px;
+        font-size: 18px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="header"></div>
+    <div class="contact">
+      <div class="contact-left">
+        <div class="contact-left-title">
+          <div class="contact-left-title-icon">
+            <ion-icon
+              name="call-outline"
+              class="contact-left-title-icon-call"
+            ></ion-icon>
+          </div>
+          <div class="contact-left-title-text">Call To Us</div>
+        </div>
+        <div class="contact-left-desc">
+          <p>We are available 24/7, 7 days a week</p>
+          <p>+855 012 555 666</p>
+        </div>
+        <hr />
+        <div class="contact-left-title">
+          <div class="contact-left-title-icon">
+            <ion-icon
+              name="mail-outline"
+              class="contact-left-title-icon-call"
+            ></ion-icon>
+          </div>
+          <div class="contact-left-title-text">Write To Us</div>
+        </div>
+        <div class="contact-left-desc">
+          <p>Fill out your form and we will contact you within 24 hours.</p>
+          <p>Email: customerservice@gmail.com</p>
+          <p>Email: customersupport@gmail.com</p>
+        </div>
+      </div>
+      <div class="contact-right">
+        <div class="contact-right-input">
+          <input type="text" name="" id="" placeholder="Your Name" />
+          <input type="text" name="" id="" placeholder="Your Email" />
+          <input type="text" name="" id="" placeholder="Your Phone" />
+        </div>
+        <div class="contact-right-desc">
+          <textarea name="" id="" placeholder="Your Message"></textarea>
+          <button class="contact-right-desc-btn">Send Message</button>
+        </div>
+      </div>
+    </div>
+    <!-- footer -->
+    <div class="footer"></div>
+
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+    <script src="/js/script.js"></script>
+  </body>
+</html>

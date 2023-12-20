@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Footer</title>
+    <style>
+      .footer {
+        margin-top: 150px;
+        background-color: #0d0d0d;
+      }
+      .footer .containt {
+        max-width: 1500px;
+        margin: auto;
+        padding: 50px 0;
+        display: flex;
+        justify-content: space-between;
+      }
+      @media (min-width: 668px) {
+        .footer .containt {
+          display: grid;
+          grid-template-columns: auto;
+          margin: 1vw;
+        }
+      }
+      @media (min-width: 780px) {
+        .footer .containt {
+          display: grid;
+          grid-template-columns: auto auto;
+          margin: 1vw;
+        }
+      }
+      @media (min-width: 1024px) {
+        .footer .containt {
+          display: grid;
+          grid-template-columns: auto auto auto;
+          margin: 1vw;
+        }
+      }
+      @media (min-width: 1124px) {
+        .footer .containt {
+          display: grid;
+          grid-template-columns: auto auto auto auto;
+          margin: 1vw;
+        }
+      }
+      @media (min-width: 1200px) {
+        .footer .containt {
+          display: grid;
+          grid-template-columns: auto auto auto auto auto;
+          margin: 1vw;
+        }
+      }
+      .footer .containt .one {
+        color: white;
+        max-width: 300px;
+      }
+      .footer .containt .one h4 {
+        padding: 10px 0;
+      }
+      .footer .containt .one p {
+        padding-bottom: 10px;
+      }
+      .footer .containt .one .box {
+        border: border 1px solid white;
+        display: flex;
+        align-items: center;
+      }
+      .footer .containt .one .box .send {
+        transform: translateX(-20px);
+      }
+      .footer .containt .one .box input[type="text"] {
+        background: none;
+        width: 100%;
+        border: 2px solid gray;
+        padding: 3px;
+        height: 30px;
+      }
+      .footer .containt .one .box input::placeholder {
+        color: gray;
+        padding: 10px;
+      }
+      .footer .containt .two {
+        color: white;
+      }
+      .footer .containt .two .menu {
+        color: white;
+        max-width: 300px;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+      }
+      .footer .containt .two .menu a {
+        color: white;
+        text-decoration: none;
+      }
+
+      .footer .containt .three {
+        color: white;
+      }
+      .footer .containt .three .menu {
+        color: white;
+        max-width: 300px;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+      }
+      .footer .containt .three .menu a {
+        color: white;
+        text-decoration: none;
+      }
+      .footer .containt .four {
+        color: white;
+      }
+      .footer .containt .four .menu {
+        color: white;
+        max-width: 300px;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+      }
+      .footer .containt .four .menu a {
+        color: white;
+        text-decoration: none;
+      }
+      .footer .containt .five {
+        max-width: 300px;
+        color: white;
+      }
+      .footer .containt .five .promotion {
+        padding: 10px 0;
+      }
+      .footer .containt .five .app {
+        display: flex;
+        align-items: center;
+      }
+      .footer .containt .five .app .qr img {
+        width: 90px;
+        margin-right: 10px;
+      }
+      .footer .containt .five .social {
+        margin: 10px 0;
+      }
+      .footer .containt .five .social img {
+        width: 30px;
+        padding: 0 10px;
+      }
+
+      .footer .copyright {
+        padding: 20px 0;
+        display: flex;
+        justify-content: center;
+      }
+      .footer .copyright p {
+        color: rgb(177, 175, 175);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="footer">
+      <div class="containt">
+        <div class="one">
+          <h3>Exclusive</h3>
+          <h4>Subscibe</h4>
+          <p>Get 10% off your first order</p>
+          <div class="box">
+            <input type="text" placeholder="Enter your email" />
+            <ion-icon class="send" name="send-outline"></ion-icon>
+          </div>
+        </div>
+        <div class="two">
+          <h3>Support</h3>
+          <div class="menu">
+            <a href="">111 Tek Tla, Sen Sok, Phnom Penh Cambodia</a>
+            <a href="">exclusive@gmail.com</a>
+            <a href="">+855 962 333 444</a>
+          </div>
+        </div>
+        <div class="three">
+          <h3>Support</h3>
+          <div class="menu">
+            <a href="">My Account</a>
+            <a href="">Login / Register</a>
+            <a href="">Cart</a>
+            <a href="">Wishlist</a>
+            <a href="">Shop</a>
+          </div>
+        </div>
+        <div class="four">
+          <h3>Quick Link</h3>
+          <div class="menu">
+            <a href="" class="policy">Privacy Policy</a>
+            <a href="" class="term">Terms Of Use</a>
+            <a href="" class="faq">FAQ</a>
+            <a href="" class="contact">Contact</a>
+          </div>
+        </div>
+        <div class="five">
+          <h3>Download App</h3>
+          <p class="promotion">Save $3 with App New User only</p>
+          <div class="app">
+            <div class="qr">
+              <img src="/images/footer/QR_Code_1698206848.png" />
+            </div>
+            <div class="device">
+              <div class="android">
+                <img
+                  src="/images/footer/png-transparent-google-play-store-logo-google-play-app-store-android-wallets-text-label-logo.png"
+                />
+              </div>
+              <div class="ios">
+                <img src="/images/footer/AppStore.png" />
+              </div>
+            </div>
+          </div>
+          <div class="social">
+            <img src="/images/social/facebook.png" />
+            <img src="/images/social/instagram.png" />
+            <img src="/images/social/twitter.png" />
+            <img src="/images/social/linkedin.png" />
+          </div>
+        </div>
+      </div>
+      <!--  -->
+      <div class="copyright">
+        <p>© Copyright Student RUPP 2023 All right reserved</p>
+      </div>
+    </div>
+    <!-- script -->
+    <script src="/js/script.js"></script>
+
+    <!-- ionic icons -->
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
+</html>
